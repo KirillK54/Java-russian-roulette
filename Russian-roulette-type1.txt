@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Ruletka {
+   
+    public static void main(String[] args) {
+           
+        
+        System.out.println("Russian roulette");
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter an integer from 0 before 9: ");
+        int a = in.nextInt();
+        int b = (int) (Math.random()*9);
+        if (a == b) {
+        	  System.out.println("You won");
+        	}
+        else {
+        	   System.out.println("You lose");
+        	}
+    }
+}
